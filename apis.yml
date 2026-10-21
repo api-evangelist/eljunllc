@@ -1,23 +1,70 @@
 aid: eljunllc
+
 name: Eljun
-description: 'Eljun is a company surfaced via the API Evangelist harvest backlog (source: g2-catalog)
-  and added to the network as a stub for full-pipeline profiling.'
+
+image: http://static1.squarespace.com/static/5c603fefa09a7e2bba527969/t/5f0dcff1d95d7b59b35ace40/1594740741776/web-banner.png?format=1500w
+
+description: 'Eljun LLC is a veteran‑owned small business providing HRIS integration and data automation solutions, primarily focused on UKG Pro and Workday HCM. Their flagship Turn‑Key Connector enables seamless data parity between payroll and HR systems, offering robust, scalable integration, reporting, and process improvement services. Co‑founded by a SpaceX HR‑tech alumnus, Eljun serves enterprises seeking reliable HR integration automation.'
+
 url: https://raw.githubusercontent.com/api-evangelist/eljunllc/refs/heads/main/apis.yml
+
 x-type: company
+
 x-source: harvest:g2-catalog
-x-tier: stub
-x-tier-reason: harvest
+
+x-tier: profiled
+x-tier-reason: enrichment pass 2026-10-20 (modular-v1; was harvest)
+
 specificationVersion: '0.20'
+
 created: '2026-10-20'
+
 modified: '2026-10-20'
+
 tags:
-- Company
-apis: []
+- HRIS
+- Integration
+- Automation
+- UKG
+- Workday
+
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+
 common:
+- type: Hosts
+  url: hosts/eljunllc-hosts.yml
+- type: Vendors
+  url: vendors/eljunllc-vendors.yml
+- type: TrustCenter
+  url: https://trust.eljunllc.com/
+- type: Security
+  url: https://www.eljunllc.com/security
+- type: DomainSecurity
+  url: security/eljunllc-domain-security.yml
 - type: Website
-  url: https://eljunllc.com/
+  url: https://www.eljunllc.com/
+
+- type: Documentation
+  url: https://www.eljunllc.com/product
+- type: APIReference
+  url: https://www.eljunllc.com/product
+- type: GettingStarted
+  url: https://www.eljunllc.com/about-2
+- type: Support
+  url: https://www.eljunllc.com/contact-1
+- type: PrivacyPolicy
+  url: https://www.eljunllc.com/privacy-policy
+- type: Careers
+  url: https://www.eljunllc.com/careers
+
+apis: []
+x-enrichment:
+  date: '2026-10-20'
+  status: enriched
+  artifacts_added: 8
+  pass: modular-v1
+  engine: identity=local,contract=local,surfaces=local,docs=local,regulatory=local

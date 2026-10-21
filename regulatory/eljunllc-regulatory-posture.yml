@@ -1,0 +1,20 @@
+generated: '2026-10-20'
+method: probed
+source: https://www.eljunllc.com/privacy-policy
+signals:
+  data_subject_request:
+    evidence:
+      - source: https://www.eljunllc.com/privacy-policy
+        http_status: 200
+        fetched: /tmp/privacy.html
+        quote: "To manage Your requests: To attend and manage Your requests to Us."
+        section: "Use of Your Personal Data"
+        note: Allows data subjects to submit and manage requests regarding their personal data.
+  data_retention:
+    evidence:
+      - source: https://www.eljunllc.com/privacy-policy
+        http_status: 200
+        fetched: /tmp/privacy.html
+        quote: "The Company will retain Your Personal Data only for as long as is necessary for the purposes set out in this Privacy Policy."
+        section: "Retention of Your Personal Data"
+        note: States the retention period policy for personal data.

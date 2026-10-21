@@ -1,0 +1,68 @@
+generated: '2026-10-20'
+method: derived
+source: the pre-flight dossier, apis.yml pointers, spec servers, well-known, vendors -- nothing fetched here
+generator: derive-hosts.py
+summary:
+  hosts: 4
+  own: 4
+  other_domain: 0
+  platform: 0
+  roles:
+  - api
+  - other
+  - website
+hosts:
+- host: api.eljunllc.com
+  found_by:
+  - contract-discovery
+  types: []
+  serves: []
+  registrable_domain: eljunllc.com
+  role: api
+  relation: own
+- host: eljunllc.com
+  found_by:
+  - probed
+  - contract-discovery
+  - well-known
+  types: []
+  serves: []
+  registrable_domain: eljunllc.com
+  role: other
+  relation: own
+- host: trust.eljunllc.com
+  found_by:
+  - pointer
+  - probed
+  - site-links
+  - contract-discovery
+  - well-known
+  types:
+  - TrustCenter
+  serves: []
+  registrable_domain: eljunllc.com
+  role: other
+  relation: own
+- host: www.eljunllc.com
+  found_by:
+  - pointer
+  - probed
+  - site-links
+  - contract-discovery
+  - well-known
+  - vendor-detect
+  types:
+  - Security
+  - Website
+  - Documentation
+  - APIReference
+  - GettingStarted
+  - Support
+  - PrivacyPolicy
+  - Careers
+  serves:
+  - hosting
+  vendor: squarespace
+  registrable_domain: eljunllc.com
+  role: website
+  relation: own
